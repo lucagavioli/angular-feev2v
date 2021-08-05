@@ -5,7 +5,7 @@ import {Product} from './products';
   providedIn: 'root'
 })
 export class CartService {
-  items: Product[] = [];
+   items: Product[] = [];
   addtoCart(product: Product) {
     this.items.push(product);
   }

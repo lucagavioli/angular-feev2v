@@ -1,0 +1,8 @@
+<h3>Cart</h3>
+<div *ngIf="items.length">
+    <button (click)="emptyCart()">Empty cart</button>
+</div>
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{ item?.name }}</span>
+  <span>{{ item?.price }}</span>
+</div>
