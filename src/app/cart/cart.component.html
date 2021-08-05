@@ -12,3 +12,14 @@
     <span>{{ item?.name }}</span>
     <span>{{ item?.price }}</span>
   </div>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">  
+  <div>
+  <label for="name">Address</label>
+  <input id="name" type="text" formControlName="name">
+  </div>
+  <div>
+    <label for="address">Address</label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+  <button class="button" type="submit">Purchase</button>
+</form>
