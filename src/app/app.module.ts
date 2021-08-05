@@ -22,9 +22,9 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    ProductAlertsComponent
+    ProductAlertsComponent, ProductDetailsComponent
   ],
-  exports: [AppComponent, TopBarComponent, ProductListComponent, ProductAlertsComponent],
+  exports: [AppComponent, TopBarComponent, ProductListComponent, ProductAlertsComponent,ProductDetailsComponent],
   bootstrap: [
     AppComponent
   ]
