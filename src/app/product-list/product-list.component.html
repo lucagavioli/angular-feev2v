@@ -1,7 +1,7 @@
 <h2>Products</h2><!-- TITLE PRODUCTS-->
 <div *ngFor="let product of products">
   <h3><!-- title with product.name-->
-    <a [title]="product.name + ' details'"> {{ product.name}}</a>
+    <a [title]="product.name + ' details'" [routerLink]="['/products',product.id]"> {{ product.name}}</a>
   </h3>
   <p *ngIf="product.description"><!-- product descrition if valid-->
      Description: {{product.description}}
